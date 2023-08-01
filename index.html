@@ -1,303 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/nd.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <title>Niño Dulay</title>
-
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <img src="images/nd.png" alt=""> Niño Dulay
-      </div>
-      <ul class="nav">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-      </ul>
+    <!-- Nav Section Start -->
+    <nav id="navbar" class=".container-fluid">  
+        <div id="navbar-container" class="container p-2 d-flex align-items-center justify-content-center justify-content-md-around">
+            <!-- Brand Section Start-->
+            <div id="nav-brand" class="d-flex align-items-center ml-3">
+                <img src="images/brand.png" width="50" height="50">
+                <h5>Niño Dulay</h5>
+            </div>
+            <!-- Brand Section End-->
+
+            <div id="nav-dirs" class="ml-auto d-none d-sm-none d-md-flex d-lg-flex justify-content-around align-items-center mr-3">
+                <a class="text-decoration-none text-white" href="#landing">About me</a>
+                <a class="text-decoration-none text-white" href="#projects">Projects</a>
+                <a class="text-decoration-none text-white" href="#skills">Skills</a>
+                <a class="text-decoration-none text-white" href="#contact">Contact me</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <section id="landing" class="">
+        <div class="background">
+        </div>
+        <div class="container d-flex align-items-center">
+            <div class="row align-items-center">
+                <!-- My description -->
+                <div id="desc" class="col-12 col-md-5 col-lg-6 order-2 order-md-1 mx-auto mt-5 mt-sm-5 mt-lg-0">
+                    <h1 class="text-center"><strong>Altis Jessie Niño Dulay</strong></h1>
+                    <h5 class="text-center"><strong>Full-Stack Web Developer/Python Developer</strong></h5>
+                    <p class="mt-4 text-justify">I'm Altis Jessie Niño DP. Dulay, a Python enthusiast, Web Developer, and passionate teacher. With over 3 years of experience, I specialize in Python programming and automation, empowering individuals by teaching them this programming language. My expertise includes Python, Flask Framework, Django Framework, MERN Stack, and a touch of C#. Currently pursuing a Bachelor of Science in Information Technology, I am committed to continuous learning and staying updated with the latest technologies.</p>
+                </div>
+                <!-- My profile card -->
+                <div id="spotify-card" class="text order-1 order-md-2 mx-auto mt-5 mt-sm-5 mt-lg-0">
+                    <!-- Playing from search part -->
+                    <div id="spotify-search" class="text-center d-flex justify-content-around mt-3">
+                        <i class="bi bi-caret-down-fill"></i>
+                        <div class="text-center d-flex flex-column">
+                            <p>PLAYING FROM SEARCH</p>
+                            <p>"stay with me" in Songs</p>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+
+                    <!-- My cover photo -->
+                    <div id="spotify-cover-photo" class="text-center mt-4">
+                        <img class="img-fluid" src="images/me_anime.png" alt="">
+                    </div>
+
+                    <!-- Song title, heart, timestamp, and icons -->
+                    <div id="spotify-bottom">
+                        <!-- Song title and heart -->
+                        <div id="spotify-song-title" class="d-flex justify-content-around mt-3">
+                            <div id="song-title-author">
+                                <h4>Stay with me</h4>
+                                <p>Miki Matsubara</p>
+                            </div>
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <!-- Timestamp and Song bar -->
+                        <div id="timestamp-bar" class="w-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="ml-5">1:00</p>
+                                <p class="mr-5">-5:12</p>
+                            </div>
+                            <div id="slider" class="mx-auto">
+                                <div id="slider-circle">
+                                    <i class="bi bi-circle-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Icons -->
+                        <div id="spotify-icons" class="mx-auto w-75 d-flex align-items-center justify-content-around mt-1">
+                            <i class="bi bi-shuffle mid-icon"></i>
+                            <i class="bi bi-skip-backward-fill mid-icon"></i>
+                            <i style="font-size: 40px;" class="bi bi-play-circle-fill"></i>
+                            <i class="bi bi-skip-forward-fill mid-icon"></i>
+                            <i class="bi bi-arrow-repeat mid-icon"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
     </div>
-  </nav>
 
-  <header class="header">
-    <div class="container">
-      <div id="home">
-        <div id="home-text">
-          <h1>Altis Jessie Niño Dulay</h1>
-          <p>Programmer</p>
-          <br>
-          <p>
-            I am a student whose dream is to become a famous developer and programmer. I started my journey when I was 16 years old, I studied Python for 3 days and tried to challenge myself by finding someone to teach this language. I found a 2nd year college student and taught him the Object Oriented Programming in Python. This gave me the idea that programming could be easy if I had the right mindset and proper attitude. Starting that day, I told myself that I will continue learning programming and help others who wanted to learn programming by teaching them. This is where I discovered that both teaching and programming is my passion.
-          </p>
-        </div>
-        <div class="images">
-          <img src="images/nino.png" alt="My Picture">
-          <!-- <img src="images/nd.png" alt="ND Logo"> -->
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <div class="about-me-header">
-        <h1>More Things About Me!</h1>
-      </div>
-      <div class="about-more">
-        <div id="about-1">
-          <div class="border">
-            <img src="images/Grad Cap.png" alt="Grad Cap">
-          </div>
-          <div id="about-desc-1" class="about-desc">
-            <h3>Consistent With Honors</h3>
-            <p>
-              I am a student with good grades ever since. My biggest motivation is my dream to become well-known in my field.
-            </p>
-          </div>
-        </div>
-  
-        <div id="about-2">
-          <div class="border">
-            <img src="images/Fast Learner.png" alt="Grad Cap">
-          </div>
-          <div id="about-desc-2"  class="about-desc">
-            <h3>Fast Learner</h3>
-            <p>
-              I am a fast learner, which means that I could adapt easily to new frameworks or new libraries without any problems in a given period of time.
-            </p>
-          </div>
-        </div>
-  
-        <div id="about-3">
-          <div class="border">
-            <img src="images/Teaching.png" alt="Grad Cap">
-          </div>
-          <div id="about-desc-3"  class="about-desc">
-            <h3>Loves to Teach</h3>
-            <p>
-              I love teaching as it became my way of learning new skills. This made me realize that I am not so bad after all.
-            </p>
-          </div>
-        </div>
-  
-        <div id="about-4">
-          <div class="border">
-            <img src="images/Design.png" alt="Grad Cap">
-          </div>
-          <div id="about-desc-4"  class="about-desc">
-            <h3>Sucks at Designing</h3>
-            <p>
-              I am bad at designing. It is just never has been my talent. Look at the design of this website, it lacks proper elements and colors.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-
-      <h1>
-        My Skills and Certifications
-      </h1>
-
-      <div class="skill-cert-container">
-        <div class="skills">
-
-          <div id="python" class="skill-item">
-            <div class="skill-text">
-              <p>Python</p>
-              <p>70%</p>
-            </div>
-            <div id="python-bar"></div>
-          </div>
-
-          <div id="cpp" class="skill-item">
-            <div class="skill-text">
-              <p>C++</p>
-              <p>30%</p>
-            </div>
-            <div id="cpp-bar"></div>
-          </div>
-
-          <div id="java" class="skill-item">
-            <div class="skill-text">
-              <p>Java</p>
-              <p>40%</p>
-            </div>
-            <div id="java-bar"></div>
-          </div>
-
-          <div id="cs" class="skill-item">
-            <div class="skill-text">
-              <p>C#</p>
-              <p>20%</p>
-            </div>
-            <div id="cs-bar"></div>
-          </div>
-
-          <div id="js" class="skill-item">
-            <div class="skill-text">
-              <p>Javascript</p>
-              <p>30%</p>
-            </div>
-            <div id="js-bar"></div>
-          </div>
-
-          <div id="html" class="skill-item">
-            <div class="skill-text">
-              <p>HTML/CSS</p>
-              <p>50%</p>
-            </div>
-            <div id="html-bar"></div>
-          </div>
-
-          <div id="sql" class="skill-item">
-            <div class="skill-text">
-              <p>SQL</p>
-              <p>50%</p>
-            </div>
-            <div id="sql-bar"></div>
-          </div>
-
-        </div>
-        <div class="certs">
-
-          <div class="certificate">
-            <div class="cert-top">
-              <p>Python Basic Certificate</p>
-              <p>October 2021</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: 7393c2d7673f</p>
-              <p>HackerRank</p>
-            </div>
-          </div>
-
-          <div class="certificate">
-            <div class="cert-top">
-              <p>Java Basic Certificate</p>
-              <p>May 2021</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: 70cb4428d5c0</p>
-              <p>HackerRank</p>
-            </div>
-          </div>
-
-          <div class="certificate">
-            <div class="cert-top">
-              <p>SQL Basic Certificate</p>
-              <p>May 2021</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: 1d2acd8346e1</p>
-              <p>HackerRank</p>
-            </div>
-          </div>
-
-          <div class="certificate-dict">
-            <div class="cert-top">
-              <p>Python for Beginner Users</p>
-              <p>April 2022</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: 83226ec7-dc34-4bbc-aed9-2386b9c12e2f</p>
-              <p>DICT PH</p>
-            </div>
-          </div>
-
-          <div class="certificate-dict">
-            <div class="cert-top">
-              <p>Python for Intermediate Users</p>
-              <p>April 2022</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: c0e90a31-4aa0-418e-b435-84dd1dcdeb25</p>
-              <p>DICT PH</p>
-            </div>
-          </div>
-
-          <div class="certificate-dict">
-            <div class="cert-top">
-              <p>Basic Statistics with Python</p>
-              <p>April 2022</p>
-            </div>
-            <div class="cert-bottom">
-              <p>Credential ID: 0ddfe0de-53ce-42af-a30b-a287fc486489</p>
-              <p>DICT PH</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="button">
-      <a href="https://github.com/NinoDulay" target="_blank">
-        <h3>Check out my Projects >>></h3>
-      </a>
-    </div>
-  </div>
-  
-
-  <section id="contact">
-    <div class="container">
-      <div class="contact-me">
-        <h1>Contact Me!</h1>
-        <div class="contacts">
-          <div class="contacts-top">
-            <div class="contact-item">
-              <img src="images/gmail.png" alt="">
-              <p>altisjessienino18</p>
-            </div>
-            <div class="contact-item">
-              <img src="images/fb.png" alt="">
-              <a href="https://www.facebook.com/nino.dulay.1804/" target="_blank">
-                <p>Niño Dulay</p>
-              </a>
-            </div>
-          </div>
-          <div class="contacts-bottom">
-            <div class="contact-item">
-              <img src="images/in.png" alt="">
-              <a href="https://www.linkedin.com/in/ninodulay/" target="_blank">
-                <p>ninodulay</p>
-              </a>
-            </div>
-            <div class="contact-item">
-              <img src="images/github.png" alt="">
-              <a href="https://github.com/NinoDulay" target="_blank">
-                <p>NinoDulay</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <div class="circle-1 circle-b"></div>
-  <div class="circle-2 circle-b"></div>
-  <div class="circle-3 circle-b"></div> -->
-
-  <div style="margin-top: 80px;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
