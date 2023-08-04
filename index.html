@@ -3,103 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Altis Jessie Niño Dulay | Portfolio</title>
+    <link rel="icon" href="images/brand.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Nav Section Start -->
-    <nav id="navbar" class=".container-fluid">  
-        <div id="navbar-container" class="container p-2 d-flex align-items-center justify-content-center justify-content-md-around">
-            <!-- Brand Section Start-->
-            <div id="nav-brand" class="d-flex align-items-center ml-3">
-                <img src="images/brand.png" width="50" height="50">
-                <h5>Niño Dulay</h5>
+    <section id="navbar-section">
+        <div id="navbar" class="mx-auto d-flex flex-row justify-content-around align-items-center">
+            <div id="nav-brand" class="d-flex justify-content-around align-items-center">
+                <img src="images/brand.png" alt="">
             </div>
-            <!-- Brand Section End-->
-
-            <div id="nav-dirs" class="ml-auto d-none d-sm-none d-md-flex d-lg-flex justify-content-around align-items-center mr-3">
-                <a class="text-decoration-none text-white" href="#landing">About me</a>
-                <a class="text-decoration-none text-white" href="#projects">Projects</a>
-                <a class="text-decoration-none text-white" href="#skills">Skills</a>
-                <a class="text-decoration-none text-white" href="#contact">Contact me</a>
+            <div id="nav-links" class="d-flex justify-content-around align-items-center">
+                <a href="#"><p>Home</p></a>
+                <a href="#"><p>About</p></a>
+                <a href="#"><p>Projects</p></a>
+                <a href="#"><p>Contact</p></a>
             </div>
-           
-        </div>
-    </nav>
-
-    <section id="landing" class="">
-        <div class="background">
-        </div>
-        <div class="container d-flex align-items-center">
-            <div class="row align-items-center">
-                <!-- My description -->
-                <div id="desc" class="col-12 col-md-5 col-lg-6 order-2 order-md-1 mx-auto mt-5 mt-sm-5 mt-lg-0">
-                    <h1 class="text-center"><strong>Altis Jessie Niño Dulay</strong></h1>
-                    <h5 class="text-center"><strong>Full-Stack Web Developer/Python Developer</strong></h5>
-                    <p class="mt-4 text-justify">I'm Altis Jessie Niño DP. Dulay, a Python enthusiast, Web Developer, and passionate teacher. With over 3 years of experience, I specialize in Python programming and automation, empowering individuals by teaching them this programming language. My expertise includes Python, Flask Framework, Django Framework, MERN Stack, and a touch of C#. Currently pursuing a Bachelor of Science in Information Technology, I am committed to continuous learning and staying updated with the latest technologies.</p>
-                </div>
-                <!-- My profile card -->
-                <div id="spotify-card" class="text order-1 order-md-2 mx-auto mt-5 mt-sm-5 mt-lg-0">
-                    <!-- Playing from search part -->
-                    <div id="spotify-search" class="text-center d-flex justify-content-around mt-3">
-                        <i class="bi bi-caret-down-fill"></i>
-                        <div class="text-center d-flex flex-column">
-                            <p>PLAYING FROM SEARCH</p>
-                            <p>"stay with me" in Songs</p>
-                        </div>
-                        <i class="bi bi-three-dots-vertical"></i>
-                    </div>
-
-                    <!-- My cover photo -->
-                    <div id="spotify-cover-photo" class="text-center mt-4">
-                        <img class="img-fluid" src="images/me_anime.png" alt="">
-                    </div>
-
-                    <!-- Song title, heart, timestamp, and icons -->
-                    <div id="spotify-bottom">
-                        <!-- Song title and heart -->
-                        <div id="spotify-song-title" class="d-flex justify-content-around mt-3">
-                            <div id="song-title-author">
-                                <h4>Stay with me</h4>
-                                <p>Miki Matsubara</p>
-                            </div>
-                            <i class="bi bi-heart"></i>
-                        </div>
-
-                        <!-- Timestamp and Song bar -->
-                        <div id="timestamp-bar" class="w-100 d-flex flex-column">
-                            <div class="d-flex justify-content-between mt-3">
-                                <p class="ml-5">1:00</p>
-                                <p class="mr-5">-5:12</p>
-                            </div>
-                            <div id="slider" class="mx-auto">
-                                <div id="slider-circle">
-                                    <i class="bi bi-circle-fill"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Icons -->
-                        <div id="spotify-icons" class="mx-auto w-75 d-flex align-items-center justify-content-around mt-1">
-                            <i class="bi bi-shuffle mid-icon"></i>
-                            <i class="bi bi-skip-backward-fill mid-icon"></i>
-                            <i style="font-size: 40px;" class="bi bi-play-circle-fill"></i>
-                            <i class="bi bi-skip-forward-fill mid-icon"></i>
-                            <i class="bi bi-arrow-repeat mid-icon"></i>
-                        </div>
-
-                    </div>
-                </div>
+            <div id="nav-urls" class="d-none d-md-flex justify-content-around align-items-center">
+                <a href="https://facebook.com/nino.dulay.1804" target="_blank"><img src="images/Menu/FB.png" alt=""></a>
+                <a href="https://github.com/ninodulay" target="_blank"><img src="images/Menu/GITHUB.png" alt=""></a>
+                <a href="https://linkedin.com/in/ninodulay" target="_blank"><img src="images/Menu/LINKEDIN.png" alt=""></a>
             </div>
-            
         </div>
     </section>
 
-    </div>
+    <section id="home">
+        <div class="main d-flex flex-column justify-content-center">
+            <!-- name -->
+            <div class="name d-flex align-items-center justify-content-start">
+                <div id="home-name">
+                    <h1>NIÑO DULAY</h1>
+                </div>
+            </div>
+
+            <!-- title -->
+            <div class="title d-flex align-items-center justify-content-start">
+                <div id="home-title">
+                    NIÑO DULAY
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
