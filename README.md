@@ -1,1 +1,0 @@
-# ninodulay.github.io
