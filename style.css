@@ -162,37 +162,10 @@ body::-webkit-scrollbar{
 }
 
 
-@media only screen and (max-width: 600px) {
-    #home .main h1{
-        font-size: 78px;
-        font-weight: 900;
-    }
-
-    
-    #home .title {
-        min-height: 45px;
-        max-height: 45px;
-
-        min-width: 280px;
-        max-width: 280px;
-
-        border-bottom-right-radius: 80px;
-        border-bottom-left-radius: 80px;
-
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-
-    #home .title h4{
-        font-size: 12px;
-    }
-  }
 
 /* Home/Landing End*/
 
 /* About Start */
-
-
 #about img{
     width: 85%;
     mix-blend-mode: hard-light;
@@ -239,3 +212,68 @@ body::-webkit-scrollbar{
 }
 
 /* About End */
+
+/* Skills Start */
+#skills-header {
+    background-color: rgba(146, 136, 248, 0.10);
+}
+
+#skills-header .container{
+    height: 100%;
+}
+
+#skills-header .container h1{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #9288F8;
+    text-shadow: 0 0 15px rgba(146, 136, 248, 0.80);
+    font-size: 45px;
+}
+
+#skills-header{
+    height: 65px;
+}
+/* Skills End */
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    #home .main h1{
+        font-size: 78px;
+        font-weight: 900;
+    }
+
+    
+    #home .title {
+        min-height: 45px;
+        max-height: 45px;
+
+        min-width: 280px;
+        max-width: 280px;
+
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    #home .title h4{
+        font-size: 12px;
+    }
+
+    #about img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about #heading{
+        margin-top: 20px;
+        text-align: left;
+    }
+    #about #desc{
+        text-align: left;
+    }
+  }
