@@ -170,6 +170,12 @@ body::-webkit-scrollbar{
     width: 85%;
     mix-blend-mode: hard-light;
     filter: brightness(1.05);
+    /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.285)); */
+
+    -webkit-filter: drop-shadow(2px 1px 2px #9188f85e)
+                    drop-shadow(-1px -1px 2px #9188f85e);
+    filter: drop-shadow(2px 1px 2px #9188f85e) 
+            drop-shadow(-1px -1px 2px #9188f85e);
 }
 
 #about #heading{
@@ -234,6 +240,7 @@ body::-webkit-scrollbar{
 #skills-header{
     height: 65px;
 }
+
 /* Skills End */
 
 
@@ -243,7 +250,6 @@ body::-webkit-scrollbar{
         font-size: 78px;
         font-weight: 900;
     }
-
     
     #home .title {
         min-height: 45px;
@@ -267,6 +273,9 @@ body::-webkit-scrollbar{
         display:block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: -10px;
+        /* box-shadow: 0 15px 20px -20px white; */
+        width: 100%;
     }
 
     #about #heading{
@@ -275,5 +284,6 @@ body::-webkit-scrollbar{
     }
     #about #desc{
         text-align: left;
+        margin-bottom: 40px;
     }
   }
