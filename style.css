@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +15,9 @@ body {
     background-color: #181F3D;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
 
 /* Navbar */
 #navbar-section{
@@ -209,14 +215,15 @@ body {
 }
 
 #about-header .container{
-    font-family: 'Poppins Black', sans-serif;
-    -webkit-text-stroke: 2px #9288F8;
-    text-shadow: 0 0 15px rgba(146, 136, 248, 0.80);
     height: 100%;
 }
 
 #about-header .container h1{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #9288F8;
+    text-shadow: 0 0 15px rgba(146, 136, 248, 0.80);
     font-size: 45px;
 }
 
